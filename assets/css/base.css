@@ -36,6 +36,11 @@ a {
   -moz-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
 }
+img {
+  border-style: none;
+  vertical-align: middle;
+  height: auto;
+}
 
 /*=====================layout==========================*/
 .container {

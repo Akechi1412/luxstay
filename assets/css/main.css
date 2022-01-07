@@ -153,9 +153,6 @@
 }
 .slide-show__item img {
   border-radius: 20px;
-  border-style: none;
-  max-width: 100%;
-  vertical-align: middle;
 }
 .slide-show .slick-dots {
   display: flex !important;
@@ -546,24 +543,11 @@
   line-height: 1.5;
   text-align: justify;
 }
-.app-intro__img {
-  border-style: none;
-  max-width: 100%;
-  vertical-align: middle;
-  height: auto;
-}
 .app-intro__qr-code {
   border: 1px solid rgba(0, 0, 0, 0.09);
   padding: 12px;
   margin-right: 12px;
   display: inline-block;
-}
-.app-intro__qr-code img,
-.app-intro__download img {
-  border-style: none;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .app-intro__download-wrap {
