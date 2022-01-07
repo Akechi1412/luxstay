@@ -25,11 +25,6 @@
 .header__logo:hover {
   color: var(--secondary-color);
 }
-.header__logo-img {
-  fill: currentColor;
-  display: inline-block;
-  vertical-align: middle;
-}
 .header__searchbar {
   display: flex;
   align-items: center;
