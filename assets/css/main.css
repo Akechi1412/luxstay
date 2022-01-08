@@ -125,7 +125,7 @@
 .header__menu-item + .header__menu-item {
   margin-left: 12px;
 }
-.header__menu-item.header__menu-item--has-submenu {
+.header__dropdown-select {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -136,12 +136,16 @@
   font-weight: 600;
   letter-spacing: 1px;
 }
-.header__menu-img-wrap {
+.header__dropdown-selected {
+  display: flex;
+  align-items: center;
+}
+.header__dropdown-flag {
   width: 24px;
   height: 24px;
   margin-right: 6px;
 }
-.header__menu-item--has-submenu-icon {
+.header__menu-dropdow-caret {
   margin-left: 6px;
   font-size: var(--secondary-font-size);
 }
