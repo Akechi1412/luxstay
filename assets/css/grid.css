@@ -20,7 +20,7 @@
   padding-left: 0;
   padding-right: 0;
 }
-.row.g-0 .col {
+.row.g-md .col {
   padding-left: 6px;
   padding-right: 6px;
 }
@@ -306,6 +306,10 @@
     flex: 0 0 calc(100% / 12 * 4);
     max-width: calc(100% / 12 * 4);
   }
+  .col-lg-4-8 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
   .col-lg-5 {
     flex: 0 0 calc(100% / 12 * 5);
     max-width: calc(100% / 12 * 5);
@@ -343,6 +347,9 @@
   }
   .col-lg-o-2 {
     margin-left: calc(100% / 12 * 2);
+  }
+  .col-lg-o-2-4 {
+    margin-left: 20%;
   }
   .col-lg-o-3 {
     margin-left: calc(100% / 12 * 3);

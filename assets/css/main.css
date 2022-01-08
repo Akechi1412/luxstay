@@ -1,3 +1,6 @@
+.app {
+  overflow: hidden;
+}
 /*
 ==================================================Header==================================================
 */
@@ -57,7 +60,7 @@
   outline: none;
   padding: 0;
   font-size: var(--secondary-font-size);
-  font-weight: 500;
+  font-weight: 600;
   width: 100%;
 }
 .header__search-input::placeholder {
@@ -65,7 +68,7 @@
 }
 .header__booking {
   font-size: var(--secondary-font-size);
-  font-weight: 500;
+  font-weight: 600;
   background-color: var(--white-color);
   display: flex;
   justify-content: center;
@@ -100,9 +103,8 @@
 .header__menu-link {
   display: block;
   padding: 5px 10px;
-  color: var(--text-color);
   font-size: var(--secondary-font-size);
-  font-weight: 500;
+  font-weight: 600;
 }
 .header__menu-link:hover {
   color: var(--secondary-color);
@@ -131,7 +133,7 @@
   padding: 6px;
   border-radius: 15px;
   font-size: var(--secondary-font-size);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 .header__menu-img-wrap {
@@ -319,6 +321,10 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
+.location__card-more b {
+  font-weight: 600;
+}
+
 /*=============================Favour======================================*/
 .favour__sub-title {
   display: flex;
@@ -418,7 +424,6 @@
   color: var(--text-light-color);
   text-transform: uppercase;
   margin-bottom: 0.8rem;
-  font-weight: 600;
 }
 .suggest__card-desc {
   color: #151b26;
@@ -510,6 +515,11 @@
 }
 
 /*=====================================App intro===================================*/
+@media (max-width: 767px) {
+  .app-intro__action {
+    margin: 0 56px;
+  }
+}
 .app-intro {
   margin-top: 6.4rem;
 }
@@ -547,7 +557,6 @@
   border: 1px solid rgba(0, 0, 0, 0.09);
   padding: 12px;
   margin-right: 12px;
-  display: inline-block;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .app-intro__download-wrap {
@@ -567,4 +576,113 @@
   .app-intro__download {
     margin-bottom: 18px;
   }
+}
+
+/*==================================Footer===========================*/
+.footer__top {
+  padding: 4.8rem 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+.footer__top-divide + .footer__top-divide {
+  margin-top: 3rem;
+}
+.footer__title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+@media (max-width: 991px) {
+  .footer__title {
+    margin-bottom: 1.6rem;
+  }
+}
+.footer__text {
+  font-size: var(--secondary-font-size);
+  line-height: 1.5;
+}
+.footer__menu {
+  margin-bottom: 0;
+}
+.footer__menu-link {
+  display: block;
+  padding: 6px 0;
+  font-size: 1.4rem;
+  user-select: none;
+}
+.footer__menu-link:hover,
+.footer__contact-link:hover {
+  color: var(--secondary-color);
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+}
+.footer__contact-content {
+  margin-left: 0.8rem;
+}
+.footer__contact-title {
+  color: var(--black-color);
+  font-size: var(--secondary-font-size);
+}
+.footer__contact-link {
+  display: block;
+}
+.footer__contact:last-child {
+  margin-top: 2.4rem;
+}
+.footer__app-download-wrap {
+  margin-right: 2.4rem;
+}
+.footer__qr-code {
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  padding: 12px;
+  margin-right: 12px;
+}
+.footer__app-download {
+  display: block;
+  margin-bottom: 1.6rem;
+}
+.footer__bank-card-list {
+  display: flex;
+  align-items: center;
+}
+.footer__certify-list {
+  margin-right: 40px;
+}
+.footer__certify-link {
+  display: block;
+}
+.footer__social-link {
+  display: inline-block;
+}
+.footer__social-link + .footer__social-link {
+  margin-left: 1.8rem;
+}
+@media (max-width: 767px) {
+  .footer__bank-card {
+    margin-top: 1.6rem;
+  }
+  .footer__certify,
+  .footer__social {
+    margin-top: 4.6rem;
+  }
+}
+.footer__bottom {
+  padding: 2.4rem 1.5rem;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .footer__bottom {
+    background-color: #f6f6f6;
+  }
+}
+.footer__bottom-text {
+  font-size: var(--secondary-font-size);
+  color: #999;
+  padding: 0 0.8rem;
+  line-height: 1.5;
+}
+.footer__bottom-text + .footer__bottom-text {
+  margin-top: 0.6rem;
 }
