@@ -25,9 +25,6 @@
   border-radius: 50%;
   color: var(--text-color);
 }
-.header__logo:hover {
-  color: var(--secondary-color);
-}
 .header__searchbar {
   display: flex;
   align-items: center;
@@ -105,9 +102,6 @@
   padding: 5px 10px;
   font-size: var(--secondary-font-size);
   font-weight: 600;
-}
-.header__menu-link:hover {
-  color: var(--secondary-color);
 }
 .header__menu-link.is-become-host {
   position: relative;
@@ -198,9 +192,6 @@
 .section-greeting__link {
   text-decoration: underline;
   color: var(--text-color);
-}
-.section-greeting__link:hover {
-  color: var(--secondary-color);
 }
 /*=============================Main Sections general================================*/
 .section {
@@ -648,10 +639,6 @@
   font-size: 1.4rem;
   user-select: none;
 }
-.footer__menu-link:hover,
-.footer__contact-link:hover {
-  color: var(--secondary-color);
-}
 
 .footer__contact {
   display: flex;
@@ -724,4 +711,85 @@
 }
 .footer__bottom-text + .footer__bottom-text {
   margin-top: 0.6rem;
+}
+
+/*=====================float call===========================*/
+.float-call {
+  --left: 58%;
+  --bottom: 55%;
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 110px;
+  height: 110px;
+  background-color: transparent;
+  z-index: 999;
+}
+.float-call:hover .float-call__around,
+.float-call:hover .float-call__cicle {
+  background-color: currentColor;
+}
+.float-call__around {
+  position: absolute;
+  bottom: var(--bottom);
+  left: var(--left);
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 175, 242, 0.5);
+  opacity: 0.2;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  -webkit-animation: floatCallAroundScale 2.3s ease-in-out infinite;
+  animation: floatCallAroundScale 2.3s ease-in-out infinite;
+}
+.float-call__cicle {
+  position: absolute;
+  bottom: var(--bottom);
+  left: var(--left);
+  width: 60px;
+  height: 60px;
+  background: rgba(30, 30, 30, 0.1)
+    url(https://drive.google.com/uc?id=1V3N2b79QjDWetC_ss9wI3c-xpWDymn9R)
+    no-repeat 50%;
+  background-size: 30px 30px;
+  background-color: #0066a6;
+  opacity: 0.8;
+  border-radius: 50%;
+  -webkit-animation: floatCallCircleRotate 1s ease-in-out infinite;
+  animation: floatCallCircleRotate 1s ease-in-out infinite;
+}
+@keyframes floatCallAroundScale {
+  0% {
+    transform: translate(-50%, 50%) scale(0.7) skew(1deg);
+  }
+  50% {
+    transform: translate(-50%, 50%) scale(1) skew(1deg);
+  }
+  100% {
+    transform: translate(-50%, 50%) scale(0.7) skew(1deg);
+  }
+}
+@keyframes floatCallCircleRotate {
+  0% {
+    transform: translate(-50%, 50%) rotate(0) skew(1deg);
+  }
+  10% {
+    transform: translate(-50%, 50%) rotate(-25deg) skew(1deg);
+  }
+  20% {
+    transform: translate(-50%, 50%) rotate(25deg) skew(1deg);
+  }
+  30% {
+    transform: translate(-50%, 50%) rotate(-25deg) skew(1deg);
+  }
+  40% {
+    transform: translate(-50%, 50%) rotate(25deg) skew(1deg);
+  }
+  50% {
+    transform: translate(-50%, 50%) rotate(0) skew(1deg);
+  }
+  100% {
+    transform: translate(-50%, 50%) rotate(0) skew(1deg);
+  }
 }
