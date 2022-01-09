@@ -112,3 +112,25 @@ h6 {
   fill: currentColor;
   stroke: none;
 }
+
+/*Animation*/
+.fadeIn {
+  -webkit-animation: fadeIn 0.4s ease-in-out;
+  animation: fadeIn 0.4s ease-in-out;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
