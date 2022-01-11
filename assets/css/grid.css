@@ -16,11 +16,11 @@
   padding-left: 4px;
   padding-right: 4px;
 }
-.row.g-0 .col {
+.row.g-0 > .col {
   padding-left: 0;
   padding-right: 0;
 }
-.row.g-md .col {
+.row.g-md > .col {
   padding-left: 6px;
   padding-right: 6px;
 }
@@ -129,15 +129,15 @@
     padding-left: 8px;
     padding-right: 8px;
   }
-  .row.g-sm .col {
+  .row.g-sm > .col {
     padding-left: 5px;
     padding-right: 5px;
   }
-  .row.g-md .col {
+  .row.g-md > .col {
     padding-left: 6px;
     padding-right: 6px;
   }
-  .row.g-lg .col {
+  .row.g-lg > .col {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -259,15 +259,15 @@
     padding-left: 12px;
     padding-right: 12px;
   }
-  .row.g-sm .col {
+  .row.g-sm > .col {
     padding-left: 5px;
     padding-right: 5px;
   }
-  .row.g-md .col {
+  .row.g-md > .col {
     padding-left: 8px;
     padding-right: 8px;
   }
-  .row.g-lg .col {
+  .row.g-lg > .col {
     padding-left: 16px;
     padding-right: 16px;
   }
