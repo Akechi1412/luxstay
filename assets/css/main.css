@@ -898,7 +898,9 @@
 }
 .post__category:hover {
   background-color: rgba(0, 0, 0, 0.6);
+  color: var(--white-color);
 }
+
 .post__top,
 .post__bottom {
   padding: 2.4rem;
@@ -1243,8 +1245,8 @@
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #e49486;
-  border-top-color: #fde2ec;
+  border: 6px solid #fcefeb;
+  border-top-color: #f0957a;
   border-radius: 50%;
   width: 60px;
   height: 60px;
