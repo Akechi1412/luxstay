@@ -1,3 +1,8 @@
+/*=============================Preload=======================*/
+$(window).on("load", function () {
+  $("#preloader").remove();
+});
+/*============================Mobile menu============================== */
 $(document).ready(function () {
   $(document).mouseup((e) => {
     if (
