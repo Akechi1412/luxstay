@@ -409,10 +409,12 @@
   display: inline-block;
 }
 /*Header responsive*/
-.header__mobie-menu-open {
+.header__mobile-menu-open {
   display: none;
-  font-size: 2.6rem;
-  padding: 0.8rem;
+}
+.header__mobile-menu-open-icon {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 .header__mobile-menu-overlay {
   display: none;
@@ -475,7 +477,7 @@
   .header__search-input {
     width: 100%;
   }
-  .header__mobie-menu-open {
+  .header__mobile-menu-open {
     display: block;
   }
   .header__mobile-menu-close {
@@ -544,7 +546,7 @@
 }
 @media (max-width: 767px) {
   :root {
-    --header-height: 56px;
+    --header-height: 64px;
   }
   .header__logo,
   .header__booking,
@@ -553,7 +555,7 @@
   }
   .header__searchbar {
     margin: 0;
-    height: 44px;
+    height: 48px;
   }
   .header__mobile-logo {
     display: block;
@@ -913,12 +915,16 @@
   .post__bottom {
     padding: 1.6rem;
   }
-  .post__title {
+  .post__category {
+    font-size: 1rem;
+  }
+  .post__title a {
     font-size: 1.6rem;
   }
 }
 .post__title {
   font-size: 2rem;
+  font-weight: 600;
 }
 .post__title a {
   color: var(--white-color);
@@ -1132,6 +1138,7 @@
 .footer__bottom-text {
   font-size: var(--secondary-font-size);
   color: #999;
+  font-weight: 400;
   padding: 0 0.8rem;
   line-height: 1.5;
 }
