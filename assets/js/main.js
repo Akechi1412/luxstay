@@ -8,7 +8,7 @@ $(document).ready(function () {
       $(".header__mobile-menu-overlay").css({ display: "none" });
     }
   });
-  $(".header__mobie-menu-open").on("click", () => {
+  $(".header__mobile-menu-open").on("click", () => {
     $(".header__menu").addClass("header__menu--mobile-opened");
     $(".header__mobile-menu-overlay").css({ display: "block" });
   });
