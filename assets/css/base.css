@@ -102,6 +102,7 @@ h6 {
 @media (max-width: 991px) {
   .hide-on-mobile-tablet {
     display: none !important;
+    visibility: visible;
   }
 }
 

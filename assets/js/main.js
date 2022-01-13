@@ -1,24 +1,43 @@
-/*===========================Search input=========================== */
 $(document).ready(function () {
-  const $searchbarWidth = $(".header__searchbar").outerWidth();
-  $(".header__search-suggest").css({ width: $searchbarWidth + "px" });
   $(document).mouseup((e) => {
     if (
-      !$(".header__search").is(e.target) &&
-      $(".header__search").has(e.target).length === 0
+      !$(".header__menu").is(e.target) &&
+      $(".header__menu").has(e.target).length === 0
+    ) {
+      $(".header__menu").removeClass("header__menu--mobile-opened");
+      $(".header__mobile-menu-overlay").css({ display: "none" });
+    }
+  });
+  $(".header__mobie-menu-open").on("click", () => {
+    $(".header__menu").addClass("header__menu--mobile-opened");
+    $(".header__mobile-menu-overlay").css({ display: "block" });
+  });
+  $(".header__mobile-menu-close").on("click", () => {
+    $(".header__menu").removeClass("header__menu--mobile-opened");
+    $(".header__mobile-menu-overlay").css({ display: "none" });
+  });
+});
+/*===========================Search input=========================== */
+$(document).ready(function () {
+  $(document).mouseup((e) => {
+    if (
+      !$(".header__search-suggest").is(e.target) &&
+      $(".header__search-suggest").has(e.target).length === 0
     ) {
       $(".header__search").removeClass("header__search--active");
+      $(".header__search-suggest").css({ display: "none" });
     }
   });
   $(".header__search-input").on("click", () => {
     $(".header__search").addClass("header__search--active");
+    $(".header__search-suggest").css({ display: "block" });
   });
   $(".header__search-input").keyup(function () {
     if ($(this).val().length > 0) {
-      $(".header__search-clear").css({ display: "inline-block" });
+      $(".header__search-clear").css({ opacity: "1" });
       $(".header__search-suggest-heading").css({ display: "none" });
     } else {
-      $(".header__search-clear").css({ display: "none" });
+      $(".header__search-clear").css({ opacity: "0" });
       $(".header__search-suggest-heading").css({ display: "block" });
     }
   });
